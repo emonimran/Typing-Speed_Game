@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid rgb(58, 58, 58);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(65, 65, 65);
+}
+
+.input-field {
+    width: 100%;
+    opacity: 0;
+    z-index: -999;
+}
+
+.vl {
+    border-left: 2px solid gray;
+    height: 40px;
+}
+
+.content-box .typing-text {
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+.typing-text p span {
+    position: relative;
+}
+
+.typing-text p .active {
+    color: lightblue;
+}
+
+.typing-text p .active::before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: lightblue;
+    animation: blink 1s ease-in-out infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 1;
+    }
+}
+
+.typing-text p .correct{
+    color: green;
+}
+.typing-text p .incorrect{
+    color: red;
+}
+
+.typing-text p {
+    font-size: 21px;
+    text-align: justify;
+    letter-spacing: 1px;
+    word-break: break-all;
+}
+
+
+
+
+
+
+
+
+
+
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+    .wrapper {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 5px solid rgb(58, 58, 58);
+        border-radius: 10px;
+        padding: 10px;
+        background-color: rgb(65, 65, 65);
+    }
+ }

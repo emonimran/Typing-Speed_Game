@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Type Speed Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  
+    <link rel="stylesheet" href="style.css">
+
+    
+  </head>
+  <body>
+    
+    <div class="wrapper container">
+        <input type="text" class="input-field mb-4">
+        <div class="content-box">
+          <div class="typing-text">
+            <p id="paragraphs"></p>
+          </div>
+        </div>
+        <div class="row content-text d-flex justify-content-between">
+            <div class="col-md-3 time-left d-flex">
+                <p class="pt-2 text-white">Time left: <span><b>60</b>s</span></p>
+                <span class="ms-md-2 vl"></span>
+            </div>
+            
+            <div class="col-md-3 mistakes d-flex">
+                <p class="pt-2 text-white">Mistakes: <span>0</span></p>
+                <span class="ms-2 vl"></span>
+            </div>
+            
+            <div class="col-md-3 wpm d-flex">
+                <p class="pt-2 text-white">WPM: <span>0</span></p>
+                <span class="ms-2 vl"></span>
+            </div>
+            
+            <div class="col-md-3 try-again">
+                <button class="btn btn-outline-light">Try Again</button>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
